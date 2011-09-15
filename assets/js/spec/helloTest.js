@@ -30,7 +30,7 @@ describe ('Hello World', function(){
 } );
 
 /*
- * Test suite for the class Person
+ * Test suite for the Spies section
  */
 describe( "Person", function() {
   it( 'greets the world', function() {
@@ -70,4 +70,23 @@ describe( "Person", function() {
     expect( fakePerson.sayHello ).toHaveBeenCalled();
  
   });
+});
+
+/*
+ * Testing some asynchronous stuff
+ */
+describe( 'Calculator', function() {
+  it( 'should factor two huge numbers asynchronously', function() {
+    var calc = new Calculator();
+    var answer = calc.factor( 18973547201226, 28460320801839 );
+
+    waitsFor( function() {
+      return calc.answerHasBeenCalculated();  
+    }, 'It took too long to find these factors', 1 );
+
+    runs( function() {
+      expect( answer ).toEqual( 9486773600613 );  
+    });
+
+  });  
 });

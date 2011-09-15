@@ -30,3 +30,20 @@ Person.prototype.helloSomeone = function( toGreet ){
 Person.prototype.sayHello = function(){
   return "Hello";  
 };
+
+/*
+ * Create the Calculator object and the factor method
+ */
+
+var Calculator = function(){};
+
+Calculator.answer = 0;
+
+Calculator.prototype.factor = function(num1, num2){
+  this.answer = num1 * num2;
+  return this.answer;
+};
+
+Calculator.prototype.answerHasBeenCalculated = function(){
+  return this.answer;
+};
