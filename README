@@ -1,0 +1,5 @@
+This is the code for the tutorial at http://evanhahn.com/?p=181
+The source code for the javascript that we are testing is in assets/js/hello.js
+The tests are all in assets/js/spec/helloTest.js
+It pretty much follows the tutorial exactly. If you want to start the tutorial from scratch just empty out the contents of hello.js and helloTest.js
+Thanks to Evan for posting the original tutorial
