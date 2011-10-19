@@ -1,0 +1,24 @@
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <!-- Jasmine files -->
+  <link rel="stylesheet" href="../assets/js/jasmine/lib/jasmine-1.1.0/jasmine.css" type="text/css" media="screen" charset="utf-8">
+  <script type="text/javascript" src="../assets/js/jasmine/lib/jasmine-1.1.0/jasmine.js" charset="utf-8"></script>
+  <script type="text/javascript" src="../assets/js/jasmine/lib/jasmine-1.1.0/jasmine-html.js" charset="utf-8"></script>
+  <link rel="icon" href="../assets/js/jasmine/lib/jasmine-1.1.0/jasmine_favicon.png" type="image/png">
+
+  <!-- Source files-->
+  <script type="text/javascript" src="assets/js/hello.js" charset="utf-8"> </script>
+  <!-- Spec files -->
+  <script type="text/javascript" src="assets/js/helloTest.js" charset="utf-8"> </script>
+
+
+  <title>Code Retreat | Jasmine Testing</title>
+</head>
+<body>
+  <script type="text/javascript">
+    jasmine.getEnv().addReporter(new jasmine.TrivialReporter());
+    jasmine.getEnv().execute();
+  </script>
+</body>
+</html>
